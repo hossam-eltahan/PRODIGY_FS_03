@@ -1,0 +1,503 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+:root {
+  --main-color: #19c8fa;
+  --transparent-color: rgb(15 116 143 / 70%);
+  --section-padding: 100px;
+  --section-margin: 100px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  overflow-x: hidden;
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+/*========================= 
+  ===========================Start Header */
+/* .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+} */
+.navbar {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+.navbar .menu-icon {
+  font-size: 24px;
+  cursor: pointer;
+}
+.navbar .logo {
+  display: flex;
+  align-items: center;
+}
+.navbar .logo img {
+  height: 40px;
+  margin-right: 10px;
+}
+.navbar .logo span {
+  font-size: 24px;
+  font-weight: bold;
+}
+.navbar .search-box {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 5px 10px;
+  width: 300px;
+}
+.navbar .search-box input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  margin-left: 5px;
+  flex-grow: 1;
+}
+.navbar .search-box i {
+  color: #aaa;
+}
+.navbar .language-icon img {
+  height: 24px;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .navbar .search-box {
+    width: 100%;
+    margin: 0 10px;
+  }
+}
+.sidebar {
+  z-index: 20;
+  text-align: center;
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  direction: rtl;
+  text-align: right;
+}
+.sidebar a {
+  text-align: center;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  left: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+/*========================= 
+  ===========================  End Header */
+
+/*========================= 
+  ===========================Start Home */
+.swiper-container {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px;
+}
+.swiper-container h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.slide-content {
+  width: 100%;
+  height: 100%;
+  background: #f5f5f5;
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.slide-content img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.slide-content h3 {
+  margin-top: 10px;
+  font-size: 24px;
+  color: #333;
+}
+.slide-content p {
+  font-size: 16px;
+  color: #555;
+}
+/*========================= 
+===========================END Home */
+/*========================= 
+===========================Start boxes */
+.boxs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*========================= 
+===========================End boxes */
+/*========================= 
+===========================start Product */
+.product {
+  margin-top: 20px;
+}
+.product h1 {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+  padding: 10px 0;
+  border-radius: 7px;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -ms-border-radius: 7px;
+  -o-border-radius: 7px;
+}
+.product .product_specification {
+  margin-top: 15px;
+}
+.product .product_specification ul li {
+  font-size: 16px;
+  color: #818181;
+}
+.product .product_specification span {
+  margin-top: 15px;
+  display: block;
+}
+/*========================= 
+===========================End Product */
+/*========================= 
+===========================start Tesiomonial */
+.testimonial-swiper {
+  overflow: hidden;
+  width: 100%;
+  padding: 20px;
+}
+
+.testimonial-content {
+  background: #fff;
+  border-radius: 10px;
+  width: 900px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: right;
+}
+
+.testimonial-content p {
+  font-size: 16px;
+  color: #555;
+}
+
+.testimonial-author {
+  display: flex;
+  /* justify-content: flex-end; */
+  align-items: center;
+  margin-top: 10px;
+}
+
+.testimonial-author span {
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+.rating span {
+  color: #f39c12;
+  font-size: 18px;
+}
+/*========================= 
+===========================End Tesiomonial */
+/*========================= 
+===========================start Timer */
+.timer-container {
+  margin-top: 20px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  color: red;
+}
+
+.timer-container h2 {
+  font-size: 24px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.timer {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.time-unit {
+  background-color: #b00;
+  color: white;
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  width: 80px; /* زيادة العرض */
+  height: 100px; /* زيادة الارتفاع */
+}
+
+.time-unit span {
+  display: block;
+  font-size: 48px; /* زيادة حجم الخط */
+  font-weight: bold;
+}
+
+.time-unit div {
+  font-size: 18px; /* زيادة حجم الخط */
+  /* margin-top: 10px; */
+}
+/*========================= 
+===========================End Timer */
+
+/*========================= 
+===========================Start Payment */
+/* Add some basic styling to the form */
+/* Add some basic styling to the form */
+.order-form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the payment method buttons */
+.payment-methods {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.payment-method {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 49%; /* Make the buttons take up half the width */
+}
+
+.payment-method.active {
+  background-color: #337ab7;
+  color: #fff;
+  border-color: #337ab7;
+}
+
+.payment-method:hover {
+  background-color: #2e84f5;
+}
+
+/* Style the form headings */
+h2 {
+  margin-top: 0;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style the form groups */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Style the labels */
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the radio buttons */
+.form-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: #ececec;
+  border-radius: 10px;
+}
+
+.form-check-input {
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 0;
+}
+
+.form-check-label {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Style the checkbox */
+.form-check-input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Style the submit button */
+.submit-btn {
+  background-color: #337ab7;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: #23527c;
+}
+
+/* Style the small text */
+small {
+  font-size: 12px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* Add some spacing between the form groups */
+.form-group + .form-group {
+  margin-top: 20px;
+}
+
+/* Style the textarea */
+textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Style the radio buttons and checkboxes on hover */
+input[type="radio"]:hover,
+input[type="checkbox"]:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Style the active radio button and checkbox */
+input[type="radio"]:checked,
+input[type="checkbox"]:checked {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+}
+/*========================= 
+===========================End Payment */
+/*========================= 
+===========================Start Company  */
+.company .container {
+  margin: 20px auto;
+  width: 80%;
+}
+.company .title {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.company .logos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.company .logos img {
+  width: 200px;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+/*========================= 
+===========================End Company  */
+/*========================= 
+===========================start Footer  */
+.footer p {
+  color: #fff;
+  text-align: center;
+  background-color: #23527c;
+  font-size: 20px;
+  font-weight: bold;
+}
+/*========================= 
+===========================End Footer  */
